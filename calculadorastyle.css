@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.calculadora {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.visor {
+    grid-column: span 4; /* Faz o visor ocupar 4 colunas */
+    width: 100%;
+    padding: 15px;
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para padding não aumentar o tamanho total */
+    margin-bottom: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+.botoes button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+    background-color: #666;
+}
+
+.botoes button:active {
+    background-color: #777;
+}
+
+.operador {
+    background-color: #f5923e;
+}
+
+.operador:hover {
+    background-color: #e08e3a;
+}
+
+.igual {
+    background-color: #4CAF50; /* Verde */
+    grid-column: span 2; /* Faz o botão de igual ocupar 2 colunas */
+}
+
+.igual:hover {
+    background-color: #45a049;
+}
+
+.limpar {
+    background-color: #f44336; /* Vermelho */
+    grid-column: span 2; /* Faz o botão C ocupar 2 colunas */
+}
+
+.limpar:hover {
+    background-color: #da190b;
+}
